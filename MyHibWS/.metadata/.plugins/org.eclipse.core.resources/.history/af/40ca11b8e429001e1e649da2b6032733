@@ -1,0 +1,50 @@
+package com.rays.test;
+
+import java.util.Iterator;
+import java.util.List;
+
+import org.hibernate.Criteria;
+import org.hibernate.Query;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.classic.Session;
+
+import com.rays.part.Part;
+
+public class TestPart {
+
+	public static void main(String[] args) {
+
+		SessionFactory sf = new Configuration().configure().buildSessionFactory();
+		Session session = sf.openSession();
+//		Transaction tx = session.beginTransaction();
+//		Part p = new Part();
+//		p.setId(3);
+//		p.setName("jk");
+//		p.setColor("Grey");
+	
+//		Query q = session.createSQLQuery("select * from part");
+//		Query q = session.createQuery("from part");
+//		Query q = session.createQuery("from part where color like 'Grey%'");
+		Query q = session.createQuery("select count(*) from UserDTO");
+//	
+//		List list = q.list();
+//		Iterator it = list.iterator();
+//		
+//		while (it.hasNext()) {
+//			Part part = (Part) it.next();
+//			System.out.print(part.getId()+"\t"+part.getName()+"\t"+part.getColor());
+//			
+//		}
+//		session.save(p);
+//		tx.commit();
+		
+		
+		Criteria c=session.createCriteria(Part.class);
+		List list1 =c.list();
+		System.out.println(list1);
+		session.close();
+
+	}
+}

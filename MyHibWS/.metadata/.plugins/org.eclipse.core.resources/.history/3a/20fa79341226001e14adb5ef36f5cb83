@@ -1,0 +1,28 @@
+package com.rays.test;
+
+import java.util.Iterator;
+import java.util.List;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+
+public class TestList {
+	public static void main(String[] args) {
+		SessionFactory sf = new  Configuration().configure().buildSessionFactory();
+		Session session = sf.openSession();
+		
+		Query q =session.createQuery("from UserDTO");
+		List list =q.list();
+		 Iterator it =list.iterator();
+		 while (it.hasNext()) {
+			Object o = (Object) it.next();
+			
+			System.out.println(o);
+			
+		}
+	}
+
+}

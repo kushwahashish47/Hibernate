@@ -1,0 +1,11 @@
+package com.rays.test;
+
+import org.hibernate.SessionFactory;
+
+
+public class TestList {
+	public static void main(String[] args) {
+		SessionFactory sf = Configuration().configure().build
+	}
+
+}

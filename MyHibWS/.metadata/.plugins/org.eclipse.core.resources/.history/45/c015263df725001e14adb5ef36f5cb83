@@ -1,0 +1,32 @@
+package com.rays.test;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.rays.dto.UserDTO;
+
+public class tsetCRUD {
+	
+	public static void main(String[] args) {
+		
+		UserDTO dto = new UserDTO();
+		
+		SessionFactory sf = new  Configuration().configure().buildSessionFactory();
+		Session session = sf.openSession();
+	
+		  Transaction tx =session.beginTransaction();
+		  dto.setId(1);
+		  dto.setFirstName("Ashish");
+		  dto.setLastName("Kushwah");
+		  dto.setLoginId("ashish@gmail.com");
+		  dto.setPassword("Ashish@123");
+		  
+		  session.save(dto);
+		
+		  tx.commit();
+	
+		  session.close();
+	}
+	}

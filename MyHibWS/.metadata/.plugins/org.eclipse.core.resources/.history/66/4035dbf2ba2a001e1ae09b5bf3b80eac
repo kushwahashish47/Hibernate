@@ -1,0 +1,20 @@
+package com.rays.test;
+
+
+
+import org.hibernate.Session;
+
+import com.rays.util.HibDataSource;
+
+public class TestProjectionsAggregate {
+	
+	public static void main(String[] args) {
+		Session session= null;
+		
+		session =HibDataSource.getSession();
+		
+		
+		
+	}
+
+}

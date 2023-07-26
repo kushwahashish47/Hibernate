@@ -1,0 +1,24 @@
+package com.rays.test;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.criterion.ProjectionList;
+import org.hibernate.criterion.Projections;
+
+import com.rays.util.HibDataSource;
+
+public class TestProjections {
+	public static void main(String[] args) {
+		
+		Session session =null;
+		
+	 session = HibDataSource.getSession();
+	 Criteria criteria= session.createCriteria("UserDTO");
+	 ProjectionList pl =Projections.projectionList();
+	 pl.add(Projections.property("id"));
+	 pl.add(Projections.property("firstName");
+	
+	}
+	
+
+}

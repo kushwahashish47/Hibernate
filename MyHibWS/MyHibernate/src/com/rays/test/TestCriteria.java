@@ -1,0 +1,41 @@
+package com.rays.test;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import org.hibernate.Criteria;
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.rays.dto.UserDTO;
+import com.rays.util.HibDataSource;
+
+public class TestCriteria {
+	public static void main(String[] args) {
+
+		Session session = null;
+
+		session = HibDataSource.getSession();
+		Criteria criteria = session.createCriteria(UserDTO.class);
+//		Query q = session.createQuery("from UserDTO"); use this when using create query method;
+		
+		List list1 = criteria.list();
+		
+		Iterator it = list1.iterator();
+
+		while (it.hasNext()) {
+			UserDTO dto = (UserDTO) it.next();
+
+			System.out.println(dto.getId());
+			System.out.println(dto.getFirstName());
+			System.out.println(dto.getLastName());
+			System.out.println(dto.getLoginId());
+			System.out.println(dto.getPassword());
+
+		}
+	}
+
+}

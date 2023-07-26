@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.security.auth.login.Configuration"/>
+    <fullyQualifiedTypeName name="com.rays.test.TestAuthenticate"/>
+    <fullyQualifiedTypeName name="com.rays.dto.Bid"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="com.rays.dto.AuctionItem"/>
+    <fullyQualifiedTypeName name="org.hibernate.FlushMode"/>
+    <fullyQualifiedTypeName name="com.rays.oneone.Address"/>
+    <fullyQualifiedTypeName name="com.rays.oneone.Employee"/>
+    <fullyQualifiedTypeName name="org.hibernate.classic.Session"/>
+    <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
+    <fullyQualifiedTypeName name="com.rays.test.Part"/>
+    <fullyQualifiedTypeName name="com.rays.part.Part"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
+    <fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.hibernate.Query"/>
+    <fullyQualifiedTypeName name="org.hibernate.criterion.Restrictions"/>
+    <fullyQualifiedTypeName name="org.hibernate.Session"/>
+    <fullyQualifiedTypeName name="java.awt.event.HierarchyBoundsAdapter"/>
+    <fullyQualifiedTypeName name="com.rays.util.HibDataSource"/>
+    <fullyQualifiedTypeName name="org.hibernate.Criteria"/>
+    <fullyQualifiedTypeName name="com.rays.dto.UserDTO"/>
+    <fullyQualifiedTypeName name="org.hibernate.criterion.ProjectionList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="org.hibernate.criterion.Projections"/>
+</qualifiedTypeNameHistroy>

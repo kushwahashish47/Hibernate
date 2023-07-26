@@ -1,0 +1,13 @@
+package com.rays.dto;
+
+public class Bid {
+	private int id;
+	private int amount;
+	private String timestamp;
+	private long itemId;
+	
+	
+	
+	
+
+}

@@ -1,0 +1,13 @@
+package com.rays.dto;
+
+import java.util.Set;
+
+public class AuctionItem {
+	private int id;
+	private String description;
+	private Set bids;
+	private Bid successfulBid = null;
+	
+	
+
+}

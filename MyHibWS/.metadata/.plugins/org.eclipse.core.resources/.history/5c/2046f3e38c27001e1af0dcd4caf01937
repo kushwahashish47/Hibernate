@@ -1,0 +1,10 @@
+package com.rays.oneone;
+
+public class Employee {
+	private int id;
+	private String firstname;
+	private String lastName;
+	private Address empAddress;
+	
+
+}
