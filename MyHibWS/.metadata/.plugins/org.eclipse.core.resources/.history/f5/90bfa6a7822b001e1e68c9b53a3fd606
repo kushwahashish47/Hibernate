@@ -1,0 +1,23 @@
+package com.rays.test;
+
+import org.hibernate.Criteria;
+import org.hibernate.FetchMode;
+import org.hibernate.Session;
+
+import com.rays.dto.AuctionItem;
+import com.rays.util.HibDataSource;
+
+public class TestJoin {
+	public static void main(String[] args) {
+	Session session=  null;
+	session= HibDataSource.getSession();
+	
+	Criteria criteria =session.createCriteria(AuctionItem.class);
+	criteria.setFetchMode(itemid, FetchMode.JOIN);
+	
+	
+		
+		
+	}
+
+}

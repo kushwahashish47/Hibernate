@@ -1,0 +1,17 @@
+package com.rays.test;
+
+import org.hibernate.Session;
+import org.hibernate.criterion.DetachedCriteria;
+
+import com.rays.dto.UserDTO;
+import com.rays.util.HibDataSource;
+
+public class TestDetachedCriteria {
+	public static void main(String[] args) {
+		Session session= null;
+		session= HibDataSource.getSession();
+		DetachedCriteria dc = DetachedCriteria.forClass(UserDTO.class);
+		
+	}
+
+}
