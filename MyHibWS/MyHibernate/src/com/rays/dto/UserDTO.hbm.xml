@@ -21,4 +21,8 @@
             <column name="PASSWORD" />
         </property>
     </class>
+    <!-- <query name="all user">
+    <![CDATA[ from UserDTO ]]>
+    
+    </query> -->
 </hibernate-mapping>

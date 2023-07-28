@@ -1,0 +1,5 @@
+package com.rays.inheritence;
+
+public class cash extends payment {
+
+}

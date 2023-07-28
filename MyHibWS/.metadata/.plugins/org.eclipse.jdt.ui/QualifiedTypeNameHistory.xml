@@ -5,7 +5,6 @@
     <fullyQualifiedTypeName name="com.rays.dto.Bid"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
-    <fullyQualifiedTypeName name="com.rays.dto.AuctionItem"/>
     <fullyQualifiedTypeName name="org.hibernate.FlushMode"/>
     <fullyQualifiedTypeName name="com.rays.oneone.Address"/>
     <fullyQualifiedTypeName name="com.rays.oneone.Employee"/>
@@ -17,15 +16,18 @@
     <fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
     <fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="org.hibernate.Query"/>
+    <fullyQualifiedTypeName name="java.awt.event.HierarchyBoundsAdapter"/>
+    <fullyQualifiedTypeName name="org.hibernate.criterion.ProjectionList"/>
+    <fullyQualifiedTypeName name="org.hibernate.criterion.Projections"/>
+    <fullyQualifiedTypeName name="org.hibernate.criterion.DetachedCriteria"/>
+    <fullyQualifiedTypeName name="com.rays.dto.AuctionItem"/>
+    <fullyQualifiedTypeName name="org.hibernate.Criteria"/>
+    <fullyQualifiedTypeName name="org.hibernate.FetchMode"/>
     <fullyQualifiedTypeName name="org.hibernate.criterion.Restrictions"/>
     <fullyQualifiedTypeName name="org.hibernate.Session"/>
-    <fullyQualifiedTypeName name="java.awt.event.HierarchyBoundsAdapter"/>
     <fullyQualifiedTypeName name="com.rays.util.HibDataSource"/>
-    <fullyQualifiedTypeName name="org.hibernate.Criteria"/>
-    <fullyQualifiedTypeName name="com.rays.dto.UserDTO"/>
-    <fullyQualifiedTypeName name="org.hibernate.criterion.ProjectionList"/>
+    <fullyQualifiedTypeName name="org.hibernate.Query"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
-    <fullyQualifiedTypeName name="org.hibernate.criterion.Projections"/>
+    <fullyQualifiedTypeName name="com.rays.dto.UserDTO"/>
 </qualifiedTypeNameHistroy>

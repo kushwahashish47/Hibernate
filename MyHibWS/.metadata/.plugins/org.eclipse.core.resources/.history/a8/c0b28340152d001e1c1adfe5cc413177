@@ -1,0 +1,37 @@
+package com.rays.subclass;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.rays.util.HibDataSource;
+
+public class TestPerSubClass {
+	public static void main(String[] args) {
+		
+		CreditCard cc = new CreditCard();
+				cc.setCctype("abc");
+				cc.setAmount(4500);
+		
+				Cash c = new Cash();
+				c.setAmount(3000);
+		
+				Cheque cq = new Cheque();
+				cq.setAmount(7000);
+				cq.setChequeNo("123");
+				cq.setBankName("icicibank");
+				Session session= null;
+		        session =HibDataSource.getSession();
+				
+				Transaction tx = session.beginTransaction();
+				session.save(cc);
+				session.save(c);
+				session.save(cq);
+		
+				tx.commit();
+				session.close();	
+	}
+		
+		}
+
+
+

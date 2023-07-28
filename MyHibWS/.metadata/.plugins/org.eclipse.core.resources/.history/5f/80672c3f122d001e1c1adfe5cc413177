@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 28, 2023, 12:00:41 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.rays.subclass.Payment" table="PAYMENT">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="amount" type="int">
+            <column name="AMOUNT" />
+        </property>
+        <property name="paymentType" type="java.lang.String">
+            <column name="PAYMENTTYPE" />
+        </property>
+       
+        <joined-subclass
+			name="com.rays.subclass.CreditCard" table="Credit_card">
+			<key column="PAYMENT_ID"></key>
+			<property name="cctype" column="CC_TYPE"></property>
+		</joined-subclass>
+
+		<joined-subclass name="com.rays.subclass.Cash"
+			table="cash">
+			<key column="PAYMENT_ID"></key>
+		</joined-subclass>
+
+		<joined-subclass
+			name="com.rays.subclass.cheque" table="Cheque">
+			<key column="PAYMENT_ID"></key>
+			<property name="BankName" column="BANK_NAME"></property>
+			
+			<property name="chequeNo" column="CHEQUE_NO"></property>
+			
+		</joined-subclass>
+        
+    </class>
+</hibernate-mapping>

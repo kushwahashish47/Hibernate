@@ -1,0 +1,8 @@
+package com.rays.test;
+
+public class TestSecondLevelCache {
+	public static void main(String[] args) {
+		session
+	}
+
+}

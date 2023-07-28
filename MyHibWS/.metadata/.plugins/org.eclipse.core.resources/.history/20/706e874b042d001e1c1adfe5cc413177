@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 06-Jun-2023, 6:36:03 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.rays.inheritence.payment" table="PAYMENT">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <discriminator column="Payemnt_type" type="java.lang.String"></discriminator>
+        <property name="amount" type="int">
+            <column name="AMOUNT" />
+        </property>
+        <property name="paymentTypr" type="java.lang.String">
+            <column name="PAYMENTTYPR" />
+        </property>
+       
+    </class>
+</hibernate-mapping>

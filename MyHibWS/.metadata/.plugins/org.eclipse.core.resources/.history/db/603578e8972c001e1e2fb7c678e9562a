@@ -1,0 +1,20 @@
+package com.rays.inheritance;
+
+public class Cheque extends payment{
+	private String chequeNo;
+	private String BankName;
+	public String getChequeNo() {
+		return chequeNo;
+	}
+	public void setChequeNo(String chequeNo) {
+		this.chequeNo = chequeNo;
+	}
+	public String getBankName() {
+		return BankName;
+	}
+	public void setBankName(String bankName) {
+		BankName = bankName;
+	}
+	
+
+}

@@ -1,0 +1,14 @@
+package com.rays.subclass;
+
+public class CreditCard extends Payment {
+	private String ccType;
+
+	public String getCctype() {
+		return ccType;
+	}
+
+	public void setCctype(String cctype) {
+		this.ccType = ccType;
+	}
+
+}

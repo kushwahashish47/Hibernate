@@ -1,0 +1,36 @@
+package com.rays.inheritance;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.classic.Session;
+
+public class TablePerClass {
+
+	public static void main(String[] args) {
+
+		CreditCard cc = new CreditCard();
+		cc.setCctype("abc");
+		cc.setAmount(4500);
+
+		cash c = new cash();
+		c.setAmount(3000);
+
+		Cheque cq = new Cheque();
+		cq.setAmount(7000);
+		cq.setChequeNo("123");
+		cq.setBankName("icicibank");
+
+		SessionFactory sf = new Configuration().configure().buildSessionFactory();
+		Session session = sf.openSession();
+		Transaction t = session.beginTransaction();
+		session.save(cc);
+		session.save(c);
+		session.save(cq);
+
+		t.commit();
+		session.close();
+
+	}
+
+}

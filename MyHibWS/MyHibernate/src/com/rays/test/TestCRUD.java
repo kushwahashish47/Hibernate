@@ -13,11 +13,11 @@ public class TestCRUD {
 
 		UserDTO dto = new UserDTO();
 
-		dto.setId(8);
-//		dto.setFirstName("b");
-//		dto.setLastName("msn");
-//		dto.setLoginId("am@gll.com");
-//		dto.setPassword("Am34");
+		dto.setId(7);
+		dto.setFirstName("dfhsaghfk");
+		dto.setLastName("msn");
+		dto.setLoginId("am@gll.com");
+		dto.setPassword("Am34");
 
 		SessionFactory sf = new Configuration().configure().buildSessionFactory();
 		Session session = sf.openSession();

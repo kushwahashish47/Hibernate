@@ -1,0 +1,14 @@
+package com.rays.inheritence;
+
+public class CreditCard extends payment{
+private String cctype;
+
+public String getCctype() {
+	return cctype;
+}
+
+public void setCctype(String cctype) {
+	this.cctype = cctype;
+}
+
+}
