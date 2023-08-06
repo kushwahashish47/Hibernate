@@ -27,9 +27,9 @@ public class TestQueryCache {
 			System.out.println(dto.getLoginId());
 			System.out.println(dto.getPassword());
 		}
-//we use query cache when we need to use same query again and again
+
 		Query q1 = session.createQuery("from UserDTO where id =2");
-//		q1.setCacheable(true);									//it will prevent query to run again and again
+		q1.setCacheable(true);									//it will prevent query to run again and again
 		List list2 = q1.list();
 		Iterator it1 = list2.iterator();
 

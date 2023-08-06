@@ -9,7 +9,6 @@
     <fullyQualifiedTypeName name="com.rays.oneone.Address"/>
     <fullyQualifiedTypeName name="com.rays.oneone.Employee"/>
     <fullyQualifiedTypeName name="org.hibernate.classic.Session"/>
-    <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
     <fullyQualifiedTypeName name="com.rays.test.Part"/>
     <fullyQualifiedTypeName name="com.rays.part.Part"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
@@ -24,10 +23,11 @@
     <fullyQualifiedTypeName name="org.hibernate.Criteria"/>
     <fullyQualifiedTypeName name="org.hibernate.FetchMode"/>
     <fullyQualifiedTypeName name="org.hibernate.criterion.Restrictions"/>
-    <fullyQualifiedTypeName name="org.hibernate.Session"/>
-    <fullyQualifiedTypeName name="com.rays.util.HibDataSource"/>
     <fullyQualifiedTypeName name="org.hibernate.Query"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="com.rays.dto.UserDTO"/>
+    <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
+    <fullyQualifiedTypeName name="com.rays.util.HibDataSource"/>
+    <fullyQualifiedTypeName name="org.hibernate.Session"/>
 </qualifiedTypeNameHistroy>

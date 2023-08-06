@@ -17,10 +17,11 @@ public class TestAuthenticate {
 		Session session =sf.openSession();
 		System.out.println("strated.....................");
 		Query q =session.createQuery("from UserDTO where loginId=? AND password=?");
-		q.setString(0, "ashish@gmail.com");
+		
+		
+		q.setString(0, "ashish@gmail.com"); // here index starts with zero while setting this//in jdbc its starts with 1
 		q.setString(1, "Ashish@123");
 		
-		System.out.println("create query..............");
 		List list =q.list();
 		
 		System.out.println(list);
